@@ -1,0 +1,103 @@
+
+
+*{
+    box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+h2{
+    text-align: center;
+    color: black;
+    position: relative;
+    margin-bottom: 22px;
+}
+#form{
+    border:2px solid black;
+    padding: 50px 50px;
+}
+.form-group {
+    height: 100px;
+    background-color: black;
+}
+.form-group label{
+    display: block;
+    color:white;
+}
+.form-group input{
+    display: block;
+    width: 500px;
+   border:2px solid black ;
+   display: flex;
+   
+}
+.form-group input:focus{
+    outline: 0;
+    border-color: green;
+   
+   
+}
+#form{
+    max-width: 642px;
+    margin-left: 207px;
+   
+}
+.form-control .success input{
+    border-color: green;
+    
+    }
+    .form-control .error input{
+        border-color: red;
+    }
+    .form-control small{
+        /* visibility: hidden; */
+        color: red;
+        font-size: 10px;
+        position: absolute;;
+        transition: .7s;
+    }
+    .form-control .error small{
+        visibility:visible;
+    } 
+    .btn{
+        transition: .5s;
+    }
+    #icon{
+        color: white;
+    }
+    #spy{
+        color: white;
+        display: none;
+    }
+    #con {
+        margin-left: 61px;
+        
+        position: absolute;
+        margin-top: 2px;
+    }
+@media only screen and (max-width:1000px){
+    #form{
+        justify-content: center;
+        margin-left: auto;
+       
+    }
+    .container{
+        justify-content: center;
+    }
+} 
+
+@media (max-width:777px){
+
+    #form{
+        justify-content: center; 
+         margin-left: auto;
+       
+    }
+    .form-group input{
+        width: 250px;
+    }
+}
+@media only screen and (max-width:390px){
+    .form-group input{
+        width: 200px;
+    }
+}
